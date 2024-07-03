@@ -3,8 +3,8 @@ import { json } from '@sveltejs/kit';
 import { Task } from '../../../server/db';
 
 export const GET = async (req) => {
-    const page = req.url.searchParams.get('page') || 1;
-    const limit = req.url.searchParams.get('limit') || 5;
+    const page = req.url.searchParams.get('page') || '1';
+    const limit = req.url.searchParams.get('limit') || '5';
 
     try {
         const tasks = await Task.find()
