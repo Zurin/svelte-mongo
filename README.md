@@ -1,38 +1,66 @@
-# create-svelte
+# SvelteKit Mini Project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Deskripsi
+Proyek ini adalah sebuah aplikasi web sederhana berupa manajemen task list yang dibangun menggunakan SvelteKit untuk frontend dan backend, Tailwind CSS untuk styling, dan MongoDB dengan ODM Mongoose yang di-host di MongoDB Atlas. Aplikasi ini memiliki antarmuka yang responsif dan mendukung operasi CRUD dasar.
 
-## Creating a project
+## Teknologi yang Digunakan
+- **Frontend & Backend:** SvelteKit
+- **Styling:** Tailwind CSS
+- **Database:** MongoDB (MongoDB Atlas) dengan Mongoose ODM
+- **Form Validation:** Zod
+- **Deployment:** Vercel
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Fitur
+- Antarmuka responsif (mobile, tablet, desktop)
+- Operasi CRUD dasar
+- Validasi formulir menggunakan Zod
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Cara Menjalankan Proyek
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Prasyarat
+Pastikan Anda telah menginstal:
+- Node.js
+- npm atau yarn
+- Akun MongoDB Atlas dengan database terkonfigurasi
 
-## Developing
+### Langkah-langkah
+1. **Clone repository ini:**
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   cd repository-name
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. **Instal dependencies:**
+   ```bash
+   npm install
+   yarn install
 
-```bash
-npm run dev
+3. **Buat file .env dari template:**
+   ```bash
+   cp .env.example .env
+   
+**Edit file .env dengan informasi koneksi MongoDB Anda.*
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. **Jalankan proyek:**
+   ```bash
+   npm run dev
+   yarn dev
 
-## Building
+5. **Buka di browser**:
+   Aplikasi akan berjalan di `http://localhost:5173`.
 
-To create a production version of your app:
+## Cara Berkontribusi
+1. Fork repository ini
+2. Buat branch fitur (`git checkout -b fitur/AmazingFeature`)
+3. Commit perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin fitur/AmazingFeature`)
+5. Buat Pull Request
 
-```bash
-npm run build
-```
+## Link Demo
+Proyek ini di-deploy ke Vercel dan dapat diakses di: [Demo URL](https://svelte-mongo-1fko.vercel.app/).
 
-You can preview the production build with `npm run preview`.
+## Link Demo Video
+[Link Demo Video](https://drive.google.com/file/d/1dTFPRfOy_z5PjwZv80q2Z_B4Vk6gY2h9/view?usp=sharing)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
